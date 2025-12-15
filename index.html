@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paslon 1 - Ketua OSIS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="paslon.css" />
+  </head>
+  <body>
+    <!-- HEADER JUDUL (SELALU TAMPIL) -->
+    <div class="main-header" id="mainHeader">
+      <div class="header-decoration top-left">★</div>
+      <div class="header-decoration top-right">★</div>
+      <div class="header-number">1</div>
+      <h1 class="header-title">
+        PASANGAN <br />
+        CALON KETUA DAN WAKIL KETUA<br />
+        <span class="header-highlight">NOMOR URUT 1</span>
+      </h1>
+      <div class="header-decoration bottom-left">✦</div>
+      <div class="header-decoration bottom-right">✦</div>
+    </div>
+
+    <!-- TOMBOL MULAI (AKAN DIHAPUS SETELAH DIKLIK) -->
+    <div id="startSection">
+      <button id="startBtn" class="start-btn">Mulai</button>
+      <!-- Musik keceriaan (ganti src jika pakai file lokal) -->
+      <audio id="cheerMusic" preload="auto">
+        <!-- Contoh lagu gratis: ganti dengan lagu keceriaan milikmu -->
+        <source
+          src="HIVI_ - Satu-Satunya (Official Lyric Video) [-RbO7wjMwx8].mp3"
+          type="audio/mpeg"
+        />
+        <!-- Atau: <source src="lagu-keceriaan.mp3" type="audio/mpeg"> -->
+      </audio>
+    </div>
+
+    <!-- HALAMAN 1: Profil & Program (SEMBUNYIKAN AWALNYA) -->
+    <div id="page1" style="display: none">
+      <!-- Profil Ketua -->
+      <section class="hero">
+        <div class="photo-frame frame-ketua reveal" data-delay="0">
+          <img
+            src="raufal - Diedit.png"
+            alt="Ketua Paslon 1"
+            class="lead-photo"
+          />
+        </div>
+        <div class="lead-name lead-name-ketua reveal" data-delay="50">
+          Muhammad Raufal Gusmi
+        </div>
+        <div class="lead-role lead-role-ketua reveal" data-delay="80">
+          Calon Ketua OSIS
+        </div>
+      </section>
+
+      <!-- Profil Wakil Ketua -->
+      <section class="hero">
+        <div class="photo-frame frame-wakil reveal" data-delay="150">
+          <img
+            src="ratna - Diedit.png"
+            alt="Wakil Ketua Paslon 1"
+            class="lead-photo"
+          />
+        </div>
+        <div class="lead-name lead-name-wakil reveal" data-delay="180">
+          Ratna Ayu Lestari
+        </div>
+        <div class="lead-role lead-role-wakil reveal" data-delay="210">
+          Calon Wakil Ketua OSIS
+        </div>
+      </section>
+
+      <!-- We Are Paslon 1 -->
+      <div class="we-are reveal" data-delay="300">
+        WE ARE PASLON 1<span>✦</span>
+      </div>
+      <br />
+
+      <!-- Foto Paslon Berdua -->
+      <div class="couple-photo-frame reveal" data-delay="350">
+        <img
+          src="rr - Diedit .png"
+          alt="Paslon 1 Bersama"
+          class="couple-photo"
+        />
+      </div>
+
+      <!-- Visi -->
+      <div class="content-card reveal" data-delay="400">
+        <div class="section-title">
+          <span class="icon">💡</span>
+          <span>Visi</span>
+        </div>
+        <p>
+          Mewujudkan OSIS sebagai OASIS (Optimis, Aspiratif, Solidaritas,
+          Inovatif, Sejahtera) yang menjadi sumber energi, inovasi, dan
+          kesejahteraan bagi seluruh warga sekolah
+        </p>
+      </div>
+
+      <!-- Misi -->
+      <div class="content-card reveal" data-delay="450">
+        <div class="section-title">
+          <span class="icon">🤝</span>
+          <span>Misi</span>
+        </div>
+        <ul>
+          <li>Membangun budaya positif yang menumbuhkan optimisme siswa</li>
+          <li>Mengaktifkan forum aspirasi yang inklusif, cepat, dan solutif</li>
+          <li>
+            Menguatkan solidaritas melalui kegiatan kolaboratif lintas kelas dan
+            organisasi
+          </li>
+          <li>
+            Meluncurkan program inovatif yang mendorong kreativitas serta minat
+            bakat
+          </li>
+          <li>
+            Mewujudkan lingkungan sekolah yang sejahtera, sehat, dan ramah siswa
+          </li>
+        </ul>
+      </div>
+
+      <!-- Program Kerja -->
+      <div class="content-card reveal" data-delay="500">
+        <div class="section-title">
+          <span class="icon">🚀</span>
+          <span>Program Kerja</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Sprotunity</strong> – Kolaborasi dengan berbagai sekolah
+            dengan mengadakan lomba dan bazar
+          </li>
+          <li>
+            <strong>Swamp & Share Day</strong> – Menyalurkan beberapa barang
+            yang masih layak untuk di gunakan kepada orang yang membutuhkan
+          </li>
+          <li>
+            <strong>Future Goals Wall</strong> – Papan yang berisi komitmen
+            warga sekolah untuk tujuan masing masing yang ingin di capai
+          </li>
+        </ul>
+      </div>
+
+      <button class="support-btn" id="supportBtn">Dukung Kami!</button>
+    </div>
+
+    <!-- HALAMAN 2: Poster -->
+    <div id="page2" style="display: none">
+      <div class="poster-frame">
+        <img src="pasangan calon.jpg" alt="Poster Paslon 1" />
+      </div>
+      <div class="jargon">
+        NOMOR SATU PILIHAN KITA, JADIKAN OSIS SUMBER OASIS BAGI SEMUA ! <br />
+        <br />
+        OASIS : STAND BY PASLON 1!
+      </div>
+      <button class="back-btn" onclick="showPage1()">← Kembali</button>
+    </div>
+
+    <script src="paslon.js"></script>
+  </body>
+</html>
